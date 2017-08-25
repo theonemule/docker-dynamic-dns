@@ -39,4 +39,4 @@ The envitonmental variables are as follows:
 
 * **SERVICE**: The service you are using. Currently, the script is setup to use DuckDNS (duckdns), DynDNS (dyndns), and NO-IP (noip). Set the service to the value in parenthesis.
 
- That's it Please comment below if there are other services using the DynDNS protocol you would like me to add.
+ That's it. Please comment below if there are other services using the DynDNS protocol you would like me to add.
