@@ -8,13 +8,13 @@ Having gotten in to Docker in recent years, I wanted to migrate my existing NO-I
 To build the Docker image, simply run Docker build
 
 ```
-docker build --no-cache --tag dynamic-dns .
+docker build --no-cache --tag docker-dynamic-dns .
 ```
 
 Or you can pull it:
 
 ```
-docker pull blaize/dynamic-dns
+docker pull blaize/docker-dynamic-dns
 ```
 
 To use the image, use Docker run.
