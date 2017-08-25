@@ -20,7 +20,7 @@ docker pull blaize/docker-dynamic-dns
 To use the image, use Docker run.
 
 ```
-docker run -it --rm --name no-ip1 -e USER=username -e PASSWORD=yourpassword -e SERVICE=duckdns -e HOSTNAME=example.com -e DETECTIP=1 -e INTERVAL=1 dynamic-dns
+docker run -it --rm --name no-ip1 -e USER=username -e PASSWORD=yourpassword -e SERVICE=duckdns -e HOSTNAME=example.com -e DETECTIP=1 -e INTERVAL=1 docker-dynamic-dns
 ```
 
 The envitonmental variables are as follows:
