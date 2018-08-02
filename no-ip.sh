@@ -62,7 +62,7 @@ USERAGENT="--user-agent=\"no-ip shell script/1.0 mail@mail.com\""
 BASE64AUTH=$(echo '"$USER:$PASSWORD"' | base64)
 AUTHHEADER="--header=\"Authorization: $BASE64AUTH\""
 
-NOIPURL="https://$USER:$PASSWORD@www.duckdns.org/v3/update"
+NOIPURL="https://$USER:$PASSWORD@$SERVICEURL"
 
 
 if [ -n "$IP" ] || [ -n "$HOSTNAME" ]
