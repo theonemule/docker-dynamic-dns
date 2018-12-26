@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 if [ -z "$USER" ]
 then
@@ -45,17 +45,23 @@ case "$SERVICE" in
         noip)
             SERVICEURL="dynupdate.no-ip.com/nic/update"
             ;;
-         
+
         dyndns)
             SERVICEURL="members.dyndns.org/v3/update"
             ;;
-         
+
         duckdns)
             SERVICEURL="www.duckdns.org/v3/update"
             ;;
+
+				google)
+            SERVICEURL="domains.google.com/nic/update"
+            ;;
+
+
         *)
 			SERVICEURL="dynupdate.no-ip.com/nic/update"
- 
+
 esac
 
 USERAGENT="--user-agent=\"no-ip shell script/1.0 mail@mail.com\""
@@ -92,15 +98,15 @@ do
 
 	RESULT=$(wget --no-check-certificate -qO- $AUTHHEADER $USERAGENT $NOIPURL)
 
-	 
+
 	echo $RESULT
-	
+
 
 	if [ $INTERVAL -eq 0 ]
 	then
 		break
 	else
-		sleep "${INTERVAL}m" 
+		sleep "${INTERVAL}m"
 	fi
 
 done
