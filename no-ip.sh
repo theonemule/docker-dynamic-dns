@@ -54,9 +54,13 @@ case "$SERVICE" in
             SERVICEURL="www.duckdns.org/v3/update"
             ;;
 
-				google)
+	google)
             SERVICEURL="domains.google.com/nic/update"
             ;;
+	    
+    	freedns)
+	    SERVICEURL="freedns.afraid.org/nic/update"
+	    ;;
 
 
         *)
