@@ -59,8 +59,8 @@ case "$SERVICE" in
             ;;
 	    
     	freedns)
-	    SERVICEURL="freedns.afraid.org/nic/update"
-	    ;;
+            SERVICEURL="freedns.afraid.org/nic/update"
+            ;;
 
 
         *)
