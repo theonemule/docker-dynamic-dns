@@ -41,7 +41,7 @@ The envitonmental variables are as follows:
 
 * **IP**: if DETECTIP is not set, you can specify an IP address.
 
-* **IPV6**: If this is set to 1, then the script will detect the external IPv6 address of the service on which the container is running.
+* **UPDATEIPV6**: If this is set to 1, then the script will detect the external IPv6 address of the service on which the container is running.
 
 * **INTERVAL**: How often the script should call the update services in minutes.
 

@@ -24,7 +24,7 @@ if [ -n "$DETECTIP" ]
 then
 	IP=$(wget -qO- "http://myexternalip.com/raw")
 
-	if [ -n "$IPV6" ]
+	if [ -n "$UPDATEIPV6" ]
 	then
 		IPV6=$(wget -q --output-document - http://checkipv6.dyndns.com/ | grep -o "[0-9a-f\:]\{8,\}")
 	fi
@@ -93,7 +93,7 @@ then
 		NOIPURL="$NOIPURL&"
 	fi
 	NOIPURL="${NOIPURL}myip=$IP"
-	if [ -n "$IPV6" ]
+	if [ -n "$UPDATEIPV6" ]
 	then
 		NOIPURL="${NOIPURL},$IPV6&myipv6=$IPV6"
 	fi
