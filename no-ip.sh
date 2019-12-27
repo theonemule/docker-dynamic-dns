@@ -95,7 +95,7 @@ then
 	NOIPURL="${NOIPURL}myip=$IP"
 	if [ -n "$IPV6" ]
 	then
-		NOIPURL="${NOIPURL},$IPV6"
+		NOIPURL="${NOIPURL},$IPV6&myipv6=$IPV6"
 	fi
 fi
 
