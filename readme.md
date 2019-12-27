@@ -41,6 +41,8 @@ The envitonmental variables are as follows:
 
 * **IP**: if DETECTIP is not set, you can specify an IP address.
 
+* **UPDATEIPV6**: If this is set to 1, then the script will detect the external IPv6 address of the service on which the container is running.
+
 * **INTERVAL**: How often the script should call the update services in minutes.
 
 * **SERVICE**: The service you are using. Currently, the script is setup to use Google Domains (google), DuckDNS (duckdns), DynDNS (dyndns), and NO-IP (noip). Set the service to the value in parenthesis.
