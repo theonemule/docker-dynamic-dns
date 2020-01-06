@@ -1,5 +1,8 @@
 #!/bin/bash
 
+while :
+do
+
 if [ -z "$USER" ]
 then
 	echo "No user was set. Use -u=username"
@@ -96,9 +99,6 @@ fi
 
 
 echo "$AUTHHEADER $USERAGENT $NOIPURL"
-
-while :
-do
 
 	RESULT=$(wget --no-check-certificate -qO- $AUTHHEADER $USERAGENT $NOIPURL)
 
