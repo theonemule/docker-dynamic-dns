@@ -1,5 +1,8 @@
 #!/bin/bash
 
+while :
+do
+
 if [ -z "$USER" ]
 then
 	echo "No user was set. Use -u=username"
@@ -59,8 +62,12 @@ case "$SERVICE" in
             SERVICEURL="www.duckdns.org/v3/update"
             ;;
 
-				google)
+	google)
             SERVICEURL="domains.google.com/nic/update"
+            ;;
+	    
+    	freedns)
+            SERVICEURL="freedns.afraid.org/nic/update"
             ;;
 
 
@@ -101,9 +108,6 @@ fi
 
 
 echo "$AUTHHEADER $USERAGENT $NOIPURL"
-
-while :
-do
 
 	RESULT=$(wget --no-check-certificate -qO- $AUTHHEADER $USERAGENT $NOIPURL)
 
